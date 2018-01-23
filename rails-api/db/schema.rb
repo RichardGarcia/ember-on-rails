@@ -10,11 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170615005219) do
+ActiveRecord::Schema.define(version: 20170618223937) do
 
-  create_table 'monsters', force: :cascade do |t|
-    t.string 'name'
-    t.integer 'level'
+  create_table "monsters", force: :cascade do |t|
+    t.string  "name"
+    t.integer "level"
+    t.boolean "active"
   end
 
 end
